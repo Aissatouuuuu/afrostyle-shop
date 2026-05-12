@@ -1,0 +1,443 @@
+/* navigation */
+body {
+    font-family: 'poppins', sans-serif;
+    background: #FEF3C7;
+    color: #1F2937;
+    line-height: 1.7;
+}
+
+nav {
+    background: #111827;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logoafro {
+    font-weight: 700;
+    font-family: 'playfair display', serif;
+    color: #92400e;
+    font-size: 28px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #D97706;
+    font-weight: 500;
+    transition: color 0.3s;
+
+}
+    nav ul li a:hover{
+        color: #D97706;
+    }
+
+/* Bienvenue */
+.bienvenue {
+    margin-top: 20px;
+    border-radius: 20px;
+    min-height: 100vh;
+    background: linear-gradient (rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(IMAGES/afro.jpeg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0.8%;
+}
+
+.bienvenue-1 {
+    max-width: 600px;
+    z-index: 2;
+}
+
+.bienvenue h1 {
+    font-family: 'playfair display', serif;
+    font-weight: 700px;
+    margin-bottom: 22px;
+
+    line-height: 1.2;
+
+
+}
+
+.bienvenue p {
+    font-weight: 298px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+    font-size: 18px;
+    max-width: 419px;
+    color: #E5E7EB;
+    line-height: 1.6;
+}
+
+.bouton{
+    display: flex;
+    gap: 22px;
+
+}
+
+.bouton1 {
+    background: #92400E;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    transition: 0.3s;
+    font-weight: 500px;
+}
+
+.bouton2 {
+    background: #065F46;
+
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: 500px;
+    text-decoration: none;
+
+
+}
+
+.bouton2:hover {
+    background: #D97706;
+
+}
+
+/* Presentation */
+.presentation {
+    padding: 80px 8%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+}
+
+.presentation h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #92400e;
+    font-family: 'playfair display', serif;
+}
+
+.presentation p {
+    color: #6B7280;
+    line-height: 1.7;
+}
+
+.presentation img {
+    border-radius: 20px;
+    width: 70%;
+}
+
+.nos-produits {
+    padding: 80px 8%;
+}
+
+.nos-produits h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: 'playfair display', serif;
+    color: #92400E;
+}
+
+.nos-produits-1 {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.presentation-produit {
+    background: white;
+    overflow: hidden;
+    transition: 0.4s;
+    border-radius: 20px;
+    box-shadow: 0 5px rgb(0, 0, 0, 0.1);
+}
+
+.presentation-produit:hover {
+    transform: translate (-10px);
+
+
+}
+
+.presentation-produit img {
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+}
+
+.presentation-produit h3 {
+    padding: 16px;
+    color: #111827
+}
+
+.presentation-produit p {
+    font-weight: bold;
+    color: #D97706;
+    padding: 20px 14px 0;
+}
+
+/* Les avantages */
+.avantages {
+    padding: 60px 8%;
+
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.avantages-1 {
+    padding: 30px;
+    background: #fef3c7;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.avantages-1 h4 {
+    margin-bottom: 10px;
+    color: #065f46;
+
+}
+
+.avantages-1 p {
+    color: #6B7280;
+}
+
+/* Pied de page */
+footer {
+    color: white;
+    text-align: center;
+    padding: 25px;
+    background: #03070f;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #dee2e9;
+}
+
+/* Collections */
+.collections{
+    padding: 80px 40px;
+}
+.collections h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #92400e;
+}
+.collection-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.classe{
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15 px  rgb(0, 0, 0, 0.1);
+}
+.classe:hover{
+    transform: translateY(-10px);
+}
+.classe img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.classe h3{
+    margin: 20px;
+    color: #111827;
+}
+.classe p{
+    margin:  0 20px 20px;
+    color: #6B7280;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.classe button{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #92400e;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.classe button:hover{
+    background-color: #D97706;
+}
+
+/* ABOUT */
+.presenter {
+    padding: 80px 40px;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    display: flex;
+}
+
+.presenter-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+.presenter-1 button{
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D97706;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+.presenter-1 p{
+    margin-bottom: 25px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #6B7280;
+}
+
+.imgapropos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.imgapropos img{
+    width: 100%;
+    
+}
+/* contact */
+form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d6cead;
+}
+textarea{
+    height: 150px;
+}
+form button{
+    padding: 15px;
+    border: none;
+    background-color: #065f46;
+    color: white;
+    border-radius: 30px;
+}
+.contact h1{
+    text-align: center;
+}
+
+/* produit */
+.produit-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+
+}
+.produits{
+    padding: 60px 40px;
+}
+.produits h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #92400e;
+    font-size: 40px;
+}
+
+
+/* Responsive */
+/* Partie Tablette */
+@media(max-width:992px){
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nos-produits-1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .collection-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .produit-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .avantages{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .presenter{
+        flex-direction: column;
+    }
+    form{
+        width: 80%;
+    }
+}
+/* partie telephone */
+@media(max-width:768px){
+    .bienvenue{
+        text-align: center;
+        padding: 40px 20 px;
+    }
+    .bienvenue h1{
+        font-size: 40px;
+    }
+    .bouton{
+        flex-direction: column;
+    }
+    .nos-produits-1{
+        grid-template-columns: 1fr;
+    }
+    .collection-content{
+        grid-template-columns: 1fr;
+    }
+    .produit-content{
+        grid-template-columns: 1fr;
+    }
+    .avantages{
+        grid-template-columns: 1fr;
+    }
+    .presentation h2
+    .collections h2
+    .produits h2{
+        font-size: 30px;
+    }
+    .presenter{
+        padding:  40px 20 px;
+
+    }
+    .imgapropos img{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+}
